@@ -19,7 +19,7 @@ export default {
       columns: [
         { key: 'category', label: 'Категория' },
         { key: 'date', label: 'Дата вручения' },
-        { key: 'grant', label: 'Стоимость гранта (млн ₽)' }
+        { key: 'grant', label: 'Стоимость гранта (млн SEK)' }
       ],
       prizes: prizesData
     }
