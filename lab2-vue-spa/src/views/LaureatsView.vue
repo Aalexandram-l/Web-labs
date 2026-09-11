@@ -1,6 +1,6 @@
 <template>
   <div class="view-container">
-    <h2>👨‍🔬 Лауреаты Нобелевской премии</h2>
+    <h2>Лауреаты Нобелевской премии</h2>
     <DataTable :columns="columns" :data="laureats" />
   </div>
 </template>
