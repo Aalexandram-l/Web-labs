@@ -4,13 +4,13 @@
 
 ## Список работ
 
-| № | Название | Технологии | Демо |
-|---|----------|------------|------|
-| 1 | HTML + CSS | HTML5, CSS3 | [Открыть](https://github.com/Aalexandram-l/Web-labs/tree/main/lab1-html-css) |
-| 2 | Реактивность | Vue 3, Vue Router | скоро |
-| 3 | Стороннее API | Vue 3, Axios | скоро |
-| 4 | Строгая типизация | io-ts, fp-ts | скоро |
-| 5 | Кеширование (PWA) | Service Worker | скоро |
+| № | Название | Технологии | Код | Демо |
+|---|----------|------------|-----|------|
+| 1 | HTML + CSS | HTML5, CSS3 | [lab1-html-css](./lab1-html-css) | [Открыть](https://aalexandram-l.github.io/Web-labs/lab1-html-css/) |
+| 2 | Реактивность | Vue 3, Vue Router | [lab2-vue-spa](./lab2-vue-spa) | [Открыть](https://web-labs-lab2.vercel.app) |
+| 3 | Стороннее API | Vue 3, Axios | — | скоро |
+| 4 | Строгая типизация | io-ts, fp-ts | — | скоро |
+| 5 | Кеширование (PWA) | Service Worker | — | скоро |
 
 ## Структура
 
