@@ -6,7 +6,7 @@
 
 | № | Название | Технологии | Демо |
 |---|----------|------------|------|
-| 1 | HTML + CSS | HTML5, CSS3 | [Открыть](https://github.com/Aalexandram-l/Web-labs) |
+| 1 | HTML + CSS | HTML5, CSS3 | [Открыть](https://github.com/Aalexandram-l/Web-labs/tree/main/lab1-html-css) |
 | 2 | Реактивность | Vue 3, Vue Router | скоро |
 | 3 | Стороннее API | Vue 3, Axios | скоро |
 | 4 | Строгая типизация | io-ts, fp-ts | скоро |
