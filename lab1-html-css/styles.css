@@ -1,0 +1,264 @@
+/* ===== Глобальные сбросы и шрифты ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+  background: #f0f4f9;
+  color: #1a2634;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+/* ===== Шапка ===== */
+header {
+  background: linear-gradient(135deg, #0b1a2e, #1a334a);
+  color: white;
+  padding: 2rem 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+header::after {
+  content: "🏅";
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  opacity: 0.25;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+  font-weight: 300;
+}
+
+/* ===== Навигация ===== */
+nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1rem;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #e2e9f2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+}
+
+nav a {
+  color: #1a334a;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.8rem;
+  border-radius: 40px;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  background: #1a334a;
+  color: white;
+  box-shadow: 0 4px 12px rgba(26, 51, 74, 0.25);
+  transform: translateY(-2px);
+}
+
+nav a:active {
+  transform: scale(0.96);
+}
+
+/* Активная страница (можно добавить вручную класс) */
+nav a.active {
+  background: #1a334a;
+  color: white;
+}
+
+/* ===== Основной контент ===== */
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  color: #0b1a2e;
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 3px solid #d4a017;
+  padding-bottom: 0.6rem;
+}
+
+main h2::before {
+  content: "📋";
+  font-size: 1.8rem;
+}
+
+/* ===== Таблица ===== */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  background: white;
+  padding: 2px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+
+/* Границы ячеек (задание) */
+th,
+td {
+  padding: 16px 20px;
+  border: 1px solid #e8edf4;
+  text-align: left;
+}
+
+/* Заголовок */
+thead {
+  background: linear-gradient(145deg, #0b1a2e, #1f3b54);
+  color: white;
+}
+
+th {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-color: #2a4057;
+}
+
+/* Четные строки (чередование) */
+tbody tr:nth-child(even) {
+  background-color: #f7faff;
+}
+
+/* Нечетные строки */
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Ховер */
+tbody tr:hover {
+  background-color: #eaf1fc !important;
+  transition: background 0.15s ease;
+  cursor: default;
+}
+
+/* Первая/последняя ячейка для скруглений (эстетика) */
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 16px;
+}
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 16px;
+}
+
+/* ===== Бейджи / метки (доп. визуал) ===== */
+td:last-child {
+  font-weight: 600;
+  color: #1a334a;
+}
+
+/* ===== Подвал ===== */
+footer {
+  background: #0b1a2e;
+  color: #a0b9d6;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #1f3b54;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+footer span {
+  color: #d4a017;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header::after {
+    display: none;
+  }
+
+  nav {
+    gap: 0.3rem;
+    padding: 0.6rem 0.5rem;
+  }
+  nav a {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 0 1rem;
+    margin: 1.5rem auto;
+  }
+  main h2 {
+    font-size: 1.3rem;
+  }
+
+  th,
+  td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .table-wrapper {
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  th,
+  td {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
+  nav a {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
