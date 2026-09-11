@@ -6,8 +6,8 @@
     </header>
 
     <nav>
-      <router-link to="/prizes">🏅 Премии</router-link>
-      <router-link to="/laureats">👨‍🔬 Лауреаты</router-link>
+      <router-link to="/prizes">Премии</router-link>
+      <router-link to="/laureats">Лауреаты</router-link>
     </nav>
 
     <main>
@@ -52,18 +52,7 @@ header {
   color: white;
   padding: 2rem 2rem 1.5rem;
   text-align: center;
-  position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-}
-
-header::after {
-  content: "🏅";
-  position: absolute;
-  right: 2.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 3rem;
-  opacity: 0.25;
 }
 
 header h1 {
@@ -134,19 +123,12 @@ footer {
   margin-top: 1rem;
 }
 
-footer span {
-  color: #d4a017;
-}
-
 @media (max-width: 768px) {
   header {
     padding: 1.5rem 1rem;
   }
   header h1 {
     font-size: 1.5rem;
-  }
-  header::after {
-    display: none;
   }
 
   nav {
