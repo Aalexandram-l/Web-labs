@@ -1,4 +1,4 @@
-/* ===== Глобальные сбросы и шрифты ===== */
+/* Глобальные сбросы и шрифты */
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +15,9 @@ body {
   line-height: 1.6;
 }
 
-/* ===== Шапка ===== */
 header {
-  background: linear-gradient(135deg, #0b1a2e, #1a334a);
-  color: white;
+  background: linear-gradient(135deg, #f8bbd0, #f48fb1);
+  color: #880e4f;
   padding: 2rem 2rem 1.5rem;
   text-align: center;
   position: relative;
@@ -29,7 +28,6 @@ header h1 {
   font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: 1.5px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 header p {
@@ -41,7 +39,7 @@ header p {
 
 /* ===== Навигация ===== */
 nav {
-  background: #ffffff;
+  background: #fce4ec;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -56,7 +54,7 @@ nav {
 }
 
 nav a {
-  color: #1a334a;
+  color: #880e4f;
   text-decoration: none;
   font-weight: 600;
   padding: 0.6rem 1.8rem;
@@ -68,8 +66,8 @@ nav a {
 }
 
 nav a:hover {
-  background: #1a334a;
-  color: white;
+  background: #f48fb1;
+  color: #880e4f;
   box-shadow: 0 4px 12px rgba(26, 51, 74, 0.25);
   transform: translateY(-2px);
 }
@@ -78,13 +76,11 @@ nav a:active {
   transform: scale(0.96);
 }
 
-/* Активная страница (можно добавить вручную класс) */
 nav a.active {
   background: #1a334a;
   color: white;
 }
 
-/* ===== Основной контент ===== */
 main {
   flex: 1;
   max-width: 1200px;
@@ -95,16 +91,15 @@ main {
 
 main h2 {
   font-size: 1.8rem;
-  color: #0b1a2e;
+  color:#880e4f;
   margin-bottom: 1.8rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  border-bottom: 3px solid #d4a017;
+  border-bottom: 3px solid #f48fb1;
   padding-bottom: 0.6rem;
 }
 
-/* ===== Таблица ===== */
 .table-wrapper {
   overflow-x: auto;
   border-radius: 16px;
@@ -123,7 +118,6 @@ table {
   font-size: 0.95rem;
 }
 
-/* Границы ячеек (задание) */
 th,
 td {
   padding: 16px 20px;
@@ -131,10 +125,9 @@ td {
   text-align: left;
 }
 
-/* Заголовок */
 thead {
-  background: linear-gradient(145deg, #0b1a2e, #1f3b54);
-  color: white;
+  background: linear-gradient(145deg, #f8bbd0, #f48fb1);
+  color: #880e4f;
 }
 
 th {
@@ -142,27 +135,23 @@ th {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-size: 0.8rem;
-  border-color: #2a4057;
+  border-color: #f48fb1;
 }
 
-/* Четные строки (чередование) */
 tbody tr:nth-child(even) {
   background-color: #f7faff;
 }
 
-/* Нечетные строки */
 tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
 
-/* Ховер */
 tbody tr:hover {
   background-color: #eaf1fc !important;
   transition: background 0.15s ease;
   cursor: default;
 }
 
-/* Первая/последняя ячейка для скруглений (эстетика) */
 tbody tr:last-child td:first-child {
   border-bottom-left-radius: 16px;
 }
@@ -170,20 +159,18 @@ tbody tr:last-child td:last-child {
   border-bottom-right-radius: 16px;
 }
 
-/* ===== Бейджи / метки (доп. визуал) ===== */
 td:last-child {
   font-weight: 600;
   color: #1a334a;
 }
 
-/* ===== Подвал ===== */
 footer {
-  background: #0b1a2e;
-  color: #a0b9d6;
+  background: #f8bbd0;
+  color: #880e4f;
   text-align: center;
   padding: 1.8rem 1rem;
   font-size: 0.9rem;
-  border-top: 1px solid #1f3b54;
+  border-top: 1px solid #f48fb1;
   margin-top: 1rem;
 }
 
@@ -196,7 +183,6 @@ footer span {
   color: #d4a017;
 }
 
-/* ===== Адаптивность ===== */
 @media (max-width: 768px) {
   header {
     padding: 1.5rem 1rem;
