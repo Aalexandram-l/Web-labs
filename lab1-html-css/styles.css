@@ -1,5 +1,4 @@
-/* Глобальные сбросы и шрифты */
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +19,6 @@ header {
   color: #880e4f;
   padding: 2rem 2rem 1.5rem;
   text-align: center;
-  position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -37,7 +35,6 @@ header p {
   font-weight: 300;
 }
 
-/* ===== Навигация ===== */
 nav {
   background: #fce4ec;
   display: flex;
