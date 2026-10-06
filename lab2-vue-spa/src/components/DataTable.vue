@@ -64,8 +64,8 @@ td {
 }
 
 thead {
-  background: linear-gradient(145deg, #0b1a2e, #1f3b54);
-  color: white;
+  background: linear-gradient(145deg, #f8bbd0, #f48fb1);
+  color: #880e4f;
 }
 
 th {
@@ -73,11 +73,11 @@ th {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-size: 0.8rem;
-  border-color: #2a4057;
+  border-color: #f48fb1;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f7faff;
+  background-color: #fce4ec;
 }
 
 tbody tr:nth-child(odd) {
@@ -85,7 +85,7 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr:hover {
-  background-color: #eaf1fc !important;
+  background-color: #f8bbd0 !important;
   transition: background 0.15s ease;
   cursor: default;
 }
@@ -99,7 +99,7 @@ tbody tr:last-child td:last-child {
 
 td:last-child {
   font-weight: 600;
-  color: #1a334a;
+  color: #880e4f;
 }
 
 @media (max-width: 768px) {
