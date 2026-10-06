@@ -36,9 +36,15 @@ export default {
 
 h2 {
   font-size: 1.8rem;
-  color: #0b1a2e;
+  color: #880e4f;
   margin-bottom: 1.8rem;
-  border-bottom: 3px solid #d4a017;
+  border-bottom: 3px solid #f48fb1;
   padding-bottom: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.3rem;
+  }
 }
 </style>
