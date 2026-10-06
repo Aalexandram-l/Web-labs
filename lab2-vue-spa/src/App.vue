@@ -14,7 +14,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 Нобелевский архив <span>✦</span></p>
+      <p>&copy; 2025 Нобелевский архив</p>
     </footer>
   </div>
 </template>
@@ -47,18 +47,17 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #0b1a2e, #1a334a);
-  color: white;
+  background: linear-gradient(135deg, #f8bbd0, #f48fb1);
+  color: #880e4f;
   padding: 2rem 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 20px rgba(244, 143, 177, 0.4);
 }
 
 header h1 {
   font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: 1.5px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 header p {
@@ -69,13 +68,13 @@ header p {
 }
 
 nav {
-  background: #ffffff;
+  background: #fce4ec;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   padding: 0.8rem 1rem;
   flex-wrap: wrap;
-  border-bottom: 2px solid #e2e9f2;
+  border-bottom: 2px solid #f8bbd0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   position: sticky;
   top: 0;
@@ -83,7 +82,7 @@ nav {
 }
 
 nav a {
-  color: #1a334a;
+  color: #880e4f;
   text-decoration: none;
   font-weight: 600;
   padding: 0.6rem 1.8rem;
@@ -95,15 +94,15 @@ nav a {
 }
 
 nav a:hover {
-  background: #1a334a;
-  color: white;
-  box-shadow: 0 4px 12px rgba(26, 51, 74, 0.25);
+  background: #f48fb1;
+  color: #880e4f;
+  box-shadow: 0 4px 12px rgba(244, 143, 177, 0.4);
   transform: translateY(-2px);
 }
 
 nav a.router-link-active {
-  background: #1a334a;
-  color: white;
+  background: #f48fb1;
+  color: #880e4f;
 }
 
 main {
@@ -113,12 +112,12 @@ main {
 }
 
 footer {
-  background: #0b1a2e;
-  color: #a0b9d6;
+  background: #f8bbd0;
+  color: #880e4f;
   text-align: center;
   padding: 1.8rem 1rem;
   font-size: 0.9rem;
-  border-top: 1px solid #1f3b54;
+  border-top: 1px solid #f48fb1;
   margin-top: 1rem;
 }
 
