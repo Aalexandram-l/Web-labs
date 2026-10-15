@@ -1,14 +1,10 @@
-import HttpClient from './HttpClient'
+import ApiClientFactory from './ApiClientFactory'
 import { decodeOrThrow } from './decode'
 import {
   LaureatesResponseCodec,
   type LaureatesResponse
 } from './codecs'
-import {
-  NOBEL_API_BASE_URL,
-  ENDPOINTS,
-  DEFAULT_PAGE_SIZE
-} from './config'
+import { ENDPOINTS, DEFAULT_PAGE_SIZE } from './config'
 
 export interface RawLaureate {
   name: string
@@ -17,11 +13,7 @@ export interface RawLaureate {
 }
 
 class NobelLaureatsService {
-  private http: HttpClient
-
-  constructor() {
-    this.http = new HttpClient(NOBEL_API_BASE_URL)
-  }
+  private http = ApiClientFactory.getNobelClient()
 
   async getLaureats(
     { limit = DEFAULT_PAGE_SIZE, offset = 0 } = {}

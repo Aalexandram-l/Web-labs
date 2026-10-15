@@ -14,12 +14,3 @@ export const ERROR_MESSAGES = {
   validation: 'Данные из API не соответствуют ожидаемому формату.',
   unknown: 'Произошла неизвестная ошибка.'
 } as const
-
-export const CATEGORY_TRANSLATIONS: Record<string, string> = {
-  Physics: 'Физика',
-  Chemistry: 'Химия',
-  Medicine: 'Медицина',
-  Literature: 'Литература',
-  Peace: 'Мира',
-  'Economic Sciences': 'Экономика'
-}

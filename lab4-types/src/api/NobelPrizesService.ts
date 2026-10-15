@@ -1,11 +1,9 @@
-import HttpClient from './HttpClient'
+import ApiClientFactory from './ApiClientFactory'
 import { decodeOrThrow } from './decode'
 import { PrizesResponseCodec, type PrizesResponse } from './codecs'
 import {
-  NOBEL_API_BASE_URL,
   ENDPOINTS,
-  DEFAULT_PAGE_SIZE,
-  CATEGORY_TRANSLATIONS
+  DEFAULT_PAGE_SIZE
 } from './config'
 
 export interface RawPrize {
@@ -15,11 +13,7 @@ export interface RawPrize {
 }
 
 class NobelPrizesService {
-  private http: HttpClient
-
-  constructor() {
-    this.http = new HttpClient(NOBEL_API_BASE_URL)
-  }
+  private http = ApiClientFactory.getNobelClient()
 
   async getPrizes(
     { limit = DEFAULT_PAGE_SIZE, offset = 0, sort = 'desc' } = {}
@@ -42,17 +36,12 @@ class NobelPrizesService {
 
   private _mapPrizes(prizes: PrizesResponse['nobelPrizes']): RawPrize[] {
     return prizes.map((prize) => ({
-      category: this._translateCategory(prize.category?.en) || '—',
+      category: prize.category?.en || '—',
       date: prize.dateAwarded || prize.awardYear || '—',
       grant: prize.prizeAmount
         ? (prize.prizeAmount / 1000000).toFixed(1)
         : '—'
     }))
-  }
-
-  private _translateCategory(category?: string): string {
-    if (!category) return '—'
-    return CATEGORY_TRANSLATIONS[category] || category
   }
 }
 
