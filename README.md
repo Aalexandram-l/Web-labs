@@ -10,7 +10,7 @@
 | 2 | Реактивность | Vue 3, Vue Router | [lab2-vue-spa](./lab2-vue-spa) | [Открыть](https://web-labs-lab2.vercel.app) |
 | 3 | Стороннее API | Vue 3, Axios | [lab3-api](./lab3-api) | [Открыть](https://web-labs-lab3.vercel.app) |
 | 4 | Строгая типизация | io-ts, fp-ts | [lab4-types](./lab4-types) | [Открыть](https://web-labs-4.vercel.app) |
-| 5 | Кеширование (PWA) | Service Worker | — | скоро |
+| 5 | Кеширование (PWA) | Service Worker | [lab5-pwa](./lab5-pwa) | [Открыть](https://web-labs-lab5.vercel.app) |
 
 ## Автор
 
